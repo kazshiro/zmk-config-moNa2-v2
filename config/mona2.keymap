@@ -98,10 +98,10 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &kp LC(C)  &trans    &kp LC(V)  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &mkp MB1   &mkp MB3  &mkp MB2   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mkp MB4   &trans    &mkp MB5   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                  &lt 3 RIGHT_SHIFT
+&trans  &trans  &trans  &trans  &trans                        &trans  &kp LC(C)  &trans    &kp LC(V)  &trans
+&trans  &trans  &trans  &trans  &trans            &trans      &trans  &mkp MB1   &mkp MB3  &mkp MB2   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans      &trans  &mkp MB4   &trans    &mkp MB5   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp DELETE  &trans                                  &lt 3 RIGHT_SHIFT
             >;
 
             sensor-bindings = <&scroll_up_down>;
