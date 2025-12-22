@@ -75,8 +75,8 @@
 
         layer_1 {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4       &kp NUMBER_5                    &kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans
-&trans        &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans                  &trans  &kp SLASH     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4       &kp NUMBER_5                    &kp SLASH     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans
+&trans        &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans                  &trans  &kp ASTERISK  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
 &trans        &trans        &trans            &trans             &trans        &trans    &trans  &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp N3        &kp EQUAL
 &trans        &trans        &trans            &trans             &trans        &trans    &trans  &trans                                                  &trans
             >;
@@ -86,10 +86,10 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                        &trans  &kp LC(C)  &trans    &kp LC(V)  &trans
-&trans  &trans  &trans  &trans  &trans            &trans      &trans  &mkp MB1   &mkp MB3  &mkp MB2   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans      &trans  &mkp MB4   &trans    &mkp MB5   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp DELETE  &trans                                  &lt 3 RIGHT_SHIFT
+&trans  &trans  &trans  &trans  &trans                        &kp LC(Z)      &kp LC(Y)  &kp LC(C)  &kp LC(V)  &kp HOME
+&trans  &trans  &trans  &trans  &trans            &trans      &kp LC(LG(S))  &mkp MB1   &mkp MB3   &mkp MB2   &kp END
+&trans  &trans  &trans  &trans  &trans  &trans    &trans      &kp LC(LS(N))  &mkp MB4   &trans     &mkp MB5   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp DELETE  &trans                                          &lt 3 RIGHT_SHIFT
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -97,10 +97,10 @@
 
         layer_3 {
             bindings = <
-&trans  &kp LC(LS(TAB))     &kp PRINTSCREEN         &kp LC(TAB)              &trans                                                   &kp EXCLAMATION        &kp QUESTION    &kp PERCENT     &kp AT_SIGN    &kp AMPERSAND
-&trans  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)     &kp LC(LG(LEFT_ARROW))   &kp LC(LG(RIGHT_ARROW))            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE       &kp UP_ARROW    &kp SEMICOLON  &kp SQT
-&trans  &kp LEFT_SHIFT      &kp LG(LS(LEFT_ARROW))  &kp LG(LS(RIGHT_ARROW))  &trans                   &trans    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp HASH
-&trans  &trans              &trans                  &trans                   &trans                   &trans    &trans                &trans                                                                &trans
+&trans  &kp LC(LS(TAB))     &kp PRINTSCREEN         &kp LC(TAB)              &trans                                                   &kp EXCLAMATION        &kp QUESTION    &kp EXCLAMATION  &kp QUESTION   &kp AT_SIGN
+&trans  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)     &kp LC(LG(LEFT_ARROW))   &kp LC(LG(RIGHT_ARROW))            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE       &kp UP_ARROW     &kp SEMICOLON  &kp SINGLE_QUOTE
+&trans  &kp LEFT_SHIFT      &kp LG(LS(LEFT_ARROW))  &kp LG(LS(RIGHT_ARROW))  &trans                   &trans    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT      &kp HASH
+&trans  &trans              &trans                  &trans                   &trans                   &trans    &trans                &trans                                                                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
