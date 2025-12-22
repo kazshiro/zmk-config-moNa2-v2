@@ -30,6 +30,20 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        kakko1: kakko1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR &kp RPAR &kp LEFT>;
+            label = "KAKKO1";
+        };
+
+        kakko2: kakko2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp RBKT &kp LEFT>;
+            label = "KAKKO2";
+        };
     };
 
     behaviors {
@@ -97,8 +111,8 @@
 
         layer_3 {
             bindings = <
-&trans  &kp LC(LS(TAB))     &kp PRINTSCREEN         &kp LC(TAB)              &trans                                                   &kp EXCLAMATION        &kp QUESTION    &kp EXCLAMATION  &kp QUESTION   &kp AT_SIGN
-&trans  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)     &kp LC(LG(LEFT_ARROW))   &kp LC(LG(RIGHT_ARROW))            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE       &kp UP_ARROW     &kp SEMICOLON  &kp SINGLE_QUOTE
+&trans  &kp LC(LS(TAB))     &kp PRINTSCREEN         &kp LC(TAB)              &trans                                                   &kp EXCLAMATION        &kakko2         &kp EXCLAMATION  &kp QUESTION   &kp AT_SIGN
+&trans  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)     &kp LC(LG(LEFT_ARROW))   &kp LC(LG(RIGHT_ARROW))            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kakko1         &kp UP_ARROW     &kp SEMICOLON  &kp SINGLE_QUOTE
 &trans  &kp LEFT_SHIFT      &kp LG(LS(LEFT_ARROW))  &kp LG(LS(RIGHT_ARROW))  &trans                   &trans    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT      &kp HASH
 &trans  &trans              &trans                  &trans                   &trans                   &trans    &trans                &trans                                                                 &trans
             >;
