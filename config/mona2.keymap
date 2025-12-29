@@ -21,7 +21,14 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        to3 {
+            bindings = <&to 3>;
+            key-positions = <4 31>;
+        };
+    };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -114,7 +121,7 @@
 &trans  &kp LC(LS(TAB))     &kp PRINTSCREEN         &kp LC(TAB)              &trans                                                   &kp EXCLAMATION        &kakko2         &kp EXCLAMATION  &kp QUESTION   &kp AT_SIGN
 &trans  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)     &kp LC(LG(LEFT_ARROW))   &kp LC(LG(RIGHT_ARROW))            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kakko1         &kp UP_ARROW     &kp SEMICOLON  &kp SINGLE_QUOTE
 &trans  &kp LEFT_SHIFT      &kp LG(LS(LEFT_ARROW))  &kp LG(LS(RIGHT_ARROW))  &trans                   &trans    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT      &kp HASH
-&trans  &trans              &trans                  &trans                   &trans                   &trans    &trans                &trans                                                                 &trans
+&trans  &trans              &trans                  &trans                   &trans                   &trans    &kp X                 &kp ENTER                                                              &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
